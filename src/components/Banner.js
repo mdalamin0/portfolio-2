@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "../assets/AL_AMIN.jpeg";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BiSolidDownload } from "react-icons/bi";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import resume from '../assets/alamin.pdf'
+import resume from '../assets/Mernstackdeveloperjakir.pdf'
 import { Link } from "react-scroll";
+import img from '../assets/jakir.jpg'
 
 const Banner = () => {
  
@@ -20,7 +20,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.7}} 
-             className="text-6xl leading-[0.8] mb-3 font-bold">It's AL AMIN</motion.h1>
+             className="text-6xl leading-[0.8] mb-3 font-bold">Hi! I'm Jakir</motion.h1>
             <motion.div
             variants={fadeIn('up', 0.4)}
             initial='hidden'
@@ -49,11 +49,7 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{once: false, amount: 0.7}}
             className="max-w-lg mx-auto lg:mx-0">
-              I am skilled MERN Stack developer. I have a good knowledge in web
-              development. I like to work specially on web developing and
-              software. I can create awesome user Friendly web application. I
-              always try to be honest in my work, I want to go far in the future
-              by working with more new technologies.
+              I'm passionate about building robust and scalable web applications using the MERN (MongoDB, Express.js, React.js, Node.js) stack. With a strong foundation in full-stack development, I bring creativity, attention to detail, and a problem-solving mindset to every project I work on.
             </motion.p>
             <motion.div 
             variants={fadeIn('up', 0.6)}
@@ -72,9 +68,9 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{once: false, amount: 0.6}}
              className="flex text-xl gap-x-6 max-w-max mx-auto  lg:mx-0 mb-10">
-              <a href=""><FaGithub className="text-2xl"></FaGithub></a>
-              <a href=""><FaLinkedin className="text-2xl"></FaLinkedin></a>
-              <a href=""><FaFacebook className="text-2xl"></FaFacebook></a>
+              <a href="https://github.com/Jakir80" target="_blank"><FaGithub className="text-2xl"></FaGithub></a>
+              <a href="https://www.linkedin.com/in/md-jakir-hossain-a3ab15219/" target="_blank"><FaLinkedin className="text-2xl"></FaLinkedin></a>
+              <a href="https://www.instagram.com/iburakz" target="_blank"><FaInstagram className="text-2xl"></FaInstagram></a>
             </motion.div>
           </div>
           <motion.div 
@@ -83,7 +79,7 @@ const Banner = () => {
           whileInView={'show'}
           viewport={{once: false, amount: 0.7}}
           className="lg:w-1/2">
-            <img className="w-[300px] mx-auto md:w-[400px] rounded-full " src={Image} alt="" />
+            <img className="w-[300px] mx-auto md:w-[400px] rounded-xl " src={img} alt="" />
           </motion.div>
         </div>
       </div>

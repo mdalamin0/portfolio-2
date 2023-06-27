@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import image from "../assets/about.png";
+import img from '../assets/new.png'
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -20,7 +20,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <img className="lg:h-[640px]" src={image} alt="" />
+            <img className=" mix-blend-lighten" src={img} alt="" />
           </motion.div>
           <motion.div
           variants={fadeIn("left", 0.5)}

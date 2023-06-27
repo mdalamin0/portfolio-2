@@ -1,40 +1,54 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
+import img from '../assets/contact-img.svg'
 
 const Contact = () => {
-  return <section className='py-16 lg:section' id='contact'>
+  return <section className='' id='contact'>
     <div className="container mx-auto">
-      <div className='flex flex-col lg:flex-row'>
-        <motion.div
-        variants={fadeIn('right', 0.3)}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{once: false, amount: 0.7}}
-        className='flex-1 flex justify-start items-center'>
-          <div>
-            <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
-            <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Let's work <br /> together</h2>
+    <div className="wrapper flex justify-center  py-16 gap-52 lg:py-12">
+          <div className="imgbox">
+            <img className="w-[550px] h-full" src={img} alt="" />
           </div>
-        </motion.div>
-        <motion.form
-        variants={fadeIn('left', 0.5)}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{once: false, amount: 0.7}}
-        className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
-          <input
-          className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
-           type="text" placeholder='Your Name' />
-          <input
-          className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
-           type="email" placeholder='Your Email' />
-           <textarea className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12'
-           placeholder='Your Message'
-           ></textarea>
-           <input className='btn btn-sm' type="submit" value="Send message" />
-        </motion.form>
-      </div>
+          <div className="content-box">
+            <h1 className="text-white font-bold text-4xl">Get In Touch</h1>
+            <form action="" className="flex flex-col ">
+            <div className="flex gap-4 py-2  ">
+              <input
+                className="bg-transparent h-14 rounded-2xl  border-[1px] border-white pl-4 text-white placeholder-white lg:w-36 "
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                className="bg-transparent h-14  rounded-2xl  border-[1px] border-white pl-4 text-white placeholder-white  lg:w-36"
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+            <div className="flex gap-4  py-4  ">
+              <input
+                className="bg-transparent h-14  rounded-2xl   border-[1px] border-white pl-4 text-white placeholder-white  lg:w-36"
+                type="email"
+                placeholder="Email"
+              />
+              <input
+                className="bg-transparent h-14  rounded-2xl  border-[1px] border-white pl-4 text-white placeholder-white  lg:w-36"
+                type="phone"
+                placeholder="Phone"
+              />
+            </div>
+            <textarea
+              className="bg-transparent rounded-2xl border-[1px] border-white h-36 pl-4 text-white w-full placeholder-white pt-2"
+              rows={40}
+              cols={35}
+              placeholder="Message"
+            ></textarea>
+                <button className="bg-white text-black border-black border-[1] py-[16px] rounded-lg px-8 my-8 w-32 font-bold ">Send</button>
+                </form>
+          </div>
+
+
+        </div>
     </div>
   </section>;
 };
