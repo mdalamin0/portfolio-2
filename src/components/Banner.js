@@ -5,8 +5,11 @@ import { BiSolidDownload } from "react-icons/bi";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import resume from '../assets/alamin.pdf'
+import { Link } from "react-scroll";
 
 const Banner = () => {
+ 
   return (
     <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center" id="home">
       <div className="container mx-auto">
@@ -58,8 +61,10 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{once: false, amount: 0.7}}
             className=" flex gap-x-6 max-w-max mx-auto lg:mx-0 mb-8 mt-10 items-center">
+              <a href={resume} download='resume'>
               <button className="btn h-[48px] px-2 md:px-6 text-sm mr-2 lg:mr-4 flex items-center">Download Resume <BiSolidDownload className="ml-2 text-xl"></BiSolidDownload> </button>
-              <a href="#" className="text-gradient btn-link">My Portfolio</a>
+              </a>
+              <Link to="contact" className="text-gradient btn-link cursor-pointer">Contact me</Link>
             </motion.div>
             <motion.div 
             variants={fadeIn('up', 0.7)}
