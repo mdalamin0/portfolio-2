@@ -23,9 +23,24 @@ const Work = () => {
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             <div className='group-hover:bg-black/70 w-full h-full absolute z-50 transition-all duration-300'></div>
             <img className='group-hover:scale-125 transition-all duration-500 w-full h-[320px]' src={img1} alt="" />
-            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='text-gradient'>UI/UX design</span></div>
+            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='text-gradient'>Sports World</span></div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl'>Project title</span>
+            <div className="flex gap-x-8">
+                  <a
+                    href="https://symphonious-pika-949131.netlify.app/"
+                    target="_blank"
+                  >
+                    <button className="btn text-sm px-3 py-2">Live Demo</button>
+                  </a>
+                  <a
+                    href="https://github.com/Jakir80/school-site-client"
+                    target="_blank"
+                  >
+                    <button className="btn text-sm px-3 py-2">
+                      Front-end code
+                    </button>
+                  </a>
+                </div>
             </div>
           </div>
         </motion.div>
@@ -38,17 +53,47 @@ const Work = () => {
         <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             <div className='group-hover:bg-black/70 w-full h-full absolute z-50 transition-all duration-300'></div>
             <img className='group-hover:scale-125 transition-all duration-500 ' src={img2} alt="" />
-            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='text-gradient'>UI/UX design</span></div>
+            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='text-gradient'> Recipe hunter</span></div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl'>Project title</span>
+            <div className="flex gap-x-8">
+                  <a
+                    href="https://jade-raindrop-524b0d.netlify.app/"
+                    target="_blank"
+                  >
+                    <button className="btn text-sm px-3 py-2">Live Demo</button>
+                  </a>
+                  <a
+                    href="https://github.com/Jakir80/Recipe-hunter-Client"
+                    target="_blank"
+                  >
+                    <button className="btn text-sm px-3 py-2">
+                      Front-end code
+                    </button>
+                  </a>
+                </div>
             </div>
           </div>
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             <div className='group-hover:bg-black/70 w-full h-full absolute z-50 transition-all duration-300'></div>
             <img className='group-hover:scale-125 transition-all duration-500 ' src={img3} alt="" />
-            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='text-gradient'>UI/UX design</span></div>
+            <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='text-gradient'>Toys Market</span></div>
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl'>Project title</span>
+            <div className="flex gap-x-8">
+                  <a
+                    href="https://loquacious-sundae-ceb316.netlify.app/"
+                    target="_blank"
+                  >
+                    <button className="btn text-sm px-3 py-2">Live Demo</button>
+                  </a>
+                  <a
+                    href="https://github.com/Jakir80/Toys-Market-client-site"
+                    target="_blank"
+                  >
+                    <button className="btn text-sm px-3 py-2">
+                      Front-end code
+                    </button>
+                  </a>
+                </div>
             </div>
           </div>
         </motion.div>
