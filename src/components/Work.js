@@ -1,7 +1,7 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
-import img1 from '../assets/project-img3.png'
+import img1 from '../assets/Screenshot_1.png'
 import img2 from '../assets/three.png'
 import img3 from '../assets/two.png'
 
@@ -73,7 +73,7 @@ const Work = () => {
                 </div>
             </div>
           </div>
-          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl mt-20'>
             <div className='group-hover:bg-black/70 w-full h-full absolute z-50 transition-all duration-300'></div>
             <img className='group-hover:scale-125 transition-all duration-500 ' src={img3} alt="" />
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'><span className='text-gradient'>Toys Market</span></div>
