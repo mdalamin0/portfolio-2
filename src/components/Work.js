@@ -17,7 +17,7 @@ const Work = () => {
         className='flex-1 flex flex-col gap-y-10 mb-10 lg:mb-0'>
           <div>
             <h2 className='h2 leading-tight text-accent'>My Latest <br /> Work.</h2>
-            <p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus consectetur at similique numquam quisquam enim temporibus voluptates, doloremque .</p>
+            <p className='max-w-sm mb-16'>I have successfully completed various notable projects that showcase my expertise in React JS Development. For instance, I developed “Shippo-Football-Academy” this is a full-stack website where I utilized React JS, Tailwind CSS, Flowbite, Firebase, Mongodb, Node.js, Express.js. And I have been working with React last 3 months.</p>
             <button className='btn btn-sm'>View all projects</button>
           </div>
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
